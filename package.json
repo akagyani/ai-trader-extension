@@ -6,7 +6,7 @@
   "author": "AKAA GYANI",
   "scripts": {
     "dev": "plasmo dev",
-    "build": "plasmo build",
+    "build": "plasmo build --zip && shx cp index.html build/ && shx cp build/chrome-mv3-prod.zip build/",
     "package": "plasmo package"
   },
   "dependencies": {
@@ -17,6 +17,7 @@
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "plasmo": "^0.90.5",
-    "typescript": "5.3.3"
+    "typescript": "5.3.3",
+    "shx": "^0.3.4"
   }
 }
