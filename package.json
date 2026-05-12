@@ -5,10 +5,10 @@
   "description": "AI Trading Copilot Chrome Extension",
   "author": "AKAA GYANI",
   "scripts": {
-    "dev": "plasmo dev",
-    "build": "plasmo build --zip && shx cp index.html build/ && shx cp build/chrome-mv3-prod.zip build/",
-    "package": "plasmo package"
-  },
+  "dev": "plasmo dev",
+  "build": "plasmo build --zip && shx mkdir -p build_out && shx cp index.html build_out/ && shx cp build/chrome-mv3-prod.zip build_out/",
+  "package": "plasmo package"
+},
   "dependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0"
